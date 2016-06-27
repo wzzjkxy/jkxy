@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+header,
+article
+ {
+    width: 650px;
+    margin: 0 auto;
+}
+
+header {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.top {
+    position: absolute;
+    right: 0;
+    margin: 20px 0 5px 0;
+    padding-right: 20px;
+    font-size: 14px
+}
+
+.top a {
+    padding: 5px;
+    color: black;
+    font-weight: bolder;
+    float: left;
+    margin-right: 10px;
+}
+
+.top a:hover {
+    color: blue;
+}
+
+.top .more {
+    display: block;
+    background-color: #38f;
+    width: 60px;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.top .more:hover {
+    display: block;
+    position: relative;
+    right: 0;
+    height: 600px;
+    width: 59px;
+    border-left: 1px solid #cccccc;
+    background-color: #eeeeee;
+    color: #494949;
+}
+
+article {
+    text-align: center;
+    font-size: 0;
+    padding:50px 0 50px 0; 
+}
+
+article img {}
+
+.inputa {
+    width: 500px;
+    height: 35px;
+    float: left;
+    outline: 0;
+    text-indent: 18px;
+    border: 1px solid #cccccc;
+}
+
+.inputa:hover {
+    border: 1px solid #898989;
+}
+
+.inputa:focus {
+    border: 1px solid #38f;
+}
+
+.inputb {
+    width: 100px;
+    height: 37px;
+    background: #38f;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    /*鼠标移上去变手型*/
+    float: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -325px;
+}
+.footer-s{
+width: 650px;
+margin: 0 auto;
+float: left;
+}
+
+.shouji,
+.nuomi,
+.font {
+    display: inline-block;
+    float: left;
+}
+
+.shouji-img {
+    width: 60px;
+    float: left;
+}
+
+.shouji-t {
+    width: 80px;
+    float: left;
+    padding: 5px;
+}
+
+.shouji-t p {
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 24px;
+}
+
+.shouji-t p b {
+    color: #737272;
+}
+
+.font-t span a {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #737272;
+}
+
+.font-d span {
+    line-height: 25px;
+    font-size: 12px;
+    color: #737272;
+}

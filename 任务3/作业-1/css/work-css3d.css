@@ -1,0 +1,137 @@
+     @charset "utf-8";
+ /* CSS Document */
+ 
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ #box table {
+     width: 200px;
+     height: 200px;
+ }
+ 
+ #box table td {
+     border: 2px solid #fff;
+ }
+ 
+ .style1 table {
+     background-color: red;
+     opacity: 0.2;
+ }
+ 
+ .style2 table {
+     background-color: yellow;
+     opacity: 0.2;
+ }
+ 
+ .style3 table {
+     background-color: blue;
+     opacity: 0.2;
+ }
+ 
+ .style4 table {
+     background-color: orange;
+     opacity: 0.2;
+ }
+ 
+ .style5 table {
+     background-color: green;
+     opacity: 0.2;
+ }
+ 
+ .style6 table {
+     background-color: black;
+     opacity: 0.2;
+ }
+ 
+ #view {
+/*     perspective: 300px;
+     -webkit-perspective: 300px;
+*/     /*景深。透视的距离*/
+     perspective-origin: 75% 25%;
+     -webkit-perspective-origin: 75% 25%;
+     /*看图的视点*/
+     width: 200px;
+     height: 200px;
+     left: 50%;
+     top: 50%;
+     margin-left: -100px;
+     margin-top: -100px;
+     position: absolute;
+ }
+ 
+ @keyframes animation {
+     from {
+         transform: rotateX(0) rotateY(0);
+     }
+     to {
+         transform: rotateX(360deg) rotateY(360deg);
+     }
+}
+@-webkit-keyframes animation {
+         from {
+             -webkit-transform: rotateX(0) rotateY(0);
+         }
+         to {
+             -webkit-transform: rotateX(360deg) rotateY(360deg);
+         }
+         /*0%{transform: rotateY(0deg) rotateX(0deg);}
+10%{transform: rotateY(36deg) rotateZ(-36deg);}
+20%{transform: rotateZ(72deg) rotateX(-72deg);}
+*/
+     }
+     #box {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         animation: animation ease-in-out infinite 3s;
+         -webkit-animation: animation ease-in-out infinite 3s;
+         transform-style: preserve-3d;
+         -webkit-transform-style: preserve-3d;
+         /*指定3d渲染*/
+         transform-origin: 100px 100px;
+         -webkit-transform-origin: 100px 100px;
+         /*旋转位置-基准点*/
+     }
+     #box div {
+         width: 100%;
+         height: 100%;
+         border: 3px solid #000;
+         background: rgba(255, 200, 100, 0.8);
+         position: absolute;
+         /*一定要*/
+         font-size: 100px;
+         text-align: center;
+     }
+     #box .one {
+         transform: translateZ(100px);
+         -webkit-transform: translateZ(100px);
+         /*向前推100*/
+     }
+     /*正面*/
+     #box .two {
+         transform: rotateX(180deg) rotateZ(180deg) translateZ(100px);
+         -webkit-transform: rotateX(180deg) rotateZ(180deg) translateZ(100px);
+     }
+     /*背部*/
+     #box .three {
+         transform: rotateY(-90deg) translateZ(100px);
+         -webkit-transform: rotateY(-90deg) translateZ(100px);
+     }
+     /*左边*/
+     #box .four {
+         transform: rotateY(90deg) translateZ(100px);
+         -webkit-transform: rotateY(90deg) translateZ(100px);
+     }
+     /*右边*/
+     #box .five {
+         transform: rotateX(90deg) translateZ(100px);
+         -webkit-transform: rotateX(90deg) translateZ(100px);
+     }
+     /*顶部*/
+     #box .six {
+         transform: rotateX(-90deg) translateZ(100px);
+         -webkit-transform: rotateX(-90deg) translateZ(100px);
+     }
+     /*底部*/

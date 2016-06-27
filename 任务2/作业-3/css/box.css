@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 5px;
+    color: #ffffff;
+    background-color: black;
+    margin: 5px;
+}
+
+h4 {
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/*正常盒子与怪异盒子对比*/
+
+.xiehe {
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.xiezi {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    overflow-y: scroll;
+}
+
+.xiehe1 {
+    border: 5px solid red;
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    box-sizing: border-box;
+    /*只针对宽高*/
+    background-color: aqua;
+}
+
+.xiezi1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    overflow-y: scroll;
+}
+
+
+/*弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏*/
+
+
+/*column*/
+
+.col {
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+}
+
+
+/*box*/
+
+.center {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    display: -webkit-box;/*记住*/
+    -webkit-box-orient: horizontal;/*水平方向*/
+    -webkit-box-pack: center; /*水平居中*/
+    -webkit-box-align: center;/*垂直居中*/
+}
+.a,
+.b,
+.c {
+    width: 50px;
+    height: 100px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+/*垂直居中*/
+.center1 {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.d,
+.e,
+.f {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+.con {
+    width: 500px;
+    background-color: green;
+    display: flex;
+    display: -webkit-flex;
+}
+
+#first {
+    height: 100px;
+    background-color: red;
+    -webkit-order: 2;
+    order: 2;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+#second {
+    height: 100px;
+    background-color: blue;
+    -webkit-order:1;
+    order:1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+#three {
+    height: 200px;
+    background-color: orange;
+    -webkit-order: 3;
+    order: 3;
+    -webkit-flex: 1;
+    flex: 1;
+}
