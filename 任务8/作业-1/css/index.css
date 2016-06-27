@@ -1,0 +1,205 @@
+/***************************/
+
+.hide {
+    display: none;
+}
+
+.divdetail {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.menu {
+    padding-top: 3px;
+    padding-bottom: 5px;
+    position: relative;
+    background-color: #3e98f0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+
+.divider {
+    clear: both;
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+}
+
+.menu ul li {
+    float: left;
+    height: 33px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    list-style: none;
+}
+
+.ui-new-toolbar {
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    z-index: 2;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+}
+
+.ui-new-toolbar-l,
+.ui-new-toolbar-r {
+    position: absolute;
+    height: 100%;
+    overflow: hidden
+}
+
+.ui-new-toolbar-l {
+    top: 0;
+    left: 0
+}
+
+.ui-new-toolbar-r {
+    top: 0;
+    right: 0
+}
+
+.ui-new-toolbar-l .ui-new-toolbar-btn {
+    float: left
+}
+
+.ui-new-toolbar-r .ui-new-toolbar-btn {
+    float: left
+}
+
+.ui-new-toolbar-btn {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px
+}
+
+.ui-new-toolbar-btn.press {}
+
+.btn-search,
+.btn-product,
+.btn-modelopen,
+.btn-subscribe,
+.btn-baidu,
+.btn-back,
+.btn-home,
+.btn-dld,
+.btn-config,
+.btn-bigger,
+.btn-smaller,
+.btn-userhome,
+.ui-toolbar-func .btn-slide,
+.ui-footer-app-download span,
+.page-view-list-item-inner div:nth-child(2) span:nth-child(3),
+.page-view-share span,
+.ui-gotop span {
+    border: 0;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat
+}
+
+.btn-search {
+    background-position: center -162px;
+    margin-right: 10px;
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+}
+
+.btn-subscribe {
+    background-position: center -107px;
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+}
+
+.btn-userhome {
+    background-position: center -463px;
+    margin-left: 10px
+}
+
+.btn-baidu {
+    background-position: center 4px
+}
+
+.divimg {
+    font-size: 0;
+    height: 68px;
+    vertical-align: middle;
+    width: 95px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    background-color: #F4F7F9;
+    position: relative;
+}
+
+.divtxt {
+    max-height: 40px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: arial;
+    vertical-align: baseline;
+    color: #707070;
+    height: 40px;
+}
+
+.divbottom {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: arial;
+    vertical-align: baseline;
+}
+
+.tip-time {
+    text-align: left;
+    color: #b8bac0;
+}
+
+.tip-reason {
+    float: right;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #fff;
+    padding: 1px 2px;
+    border-radius: 2px;
+    margin-top: 1px;
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: #0da5fc;
+    border: 1px solid transparent;
+}
